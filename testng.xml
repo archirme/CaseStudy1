@@ -5,10 +5,11 @@
 	<test name="RegressionTests" verbose="0">
 		<classes>
 			<!-- <class name="sdet.training.AlertTest"/> <class name="sdet.training.DatePicker"/> -->
-			<class name="tests.AlertWindowTest" />
-			<class name="tests.DatePickerTest" />
-			<class name="tests.FrameWindowTest" />
 			<class name="tests.UserRegistrationTest" />
+			<class name="tests.DatePickerTest" />
+			<class name="tests.AlertWindowTest" />
+			<class name="tests.FrameWindowTest" />
+			<class name="tests.WindowsSwitchTest" />			
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

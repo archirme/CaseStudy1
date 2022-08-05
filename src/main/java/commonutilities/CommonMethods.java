@@ -101,6 +101,8 @@ public class CommonMethods {
 		fis.close();
 	}
 	
+	
+	//Get the input details (Browser to run from, URL, Other input details) from the properties file
 	public Properties getInputDetails(String filePath) throws IOException
 	{
 		prop = new Properties();
@@ -110,33 +112,37 @@ public class CommonMethods {
 		return prop;
 	}
 	
-
+	// Launch the URL Passed in the Browser
 	public void launchPage(String URL)
 	{
 		driver.get(URL);
 	}
 
-	
+	//Click Action performed on the WebElement
 	public void clickElement(WebElement ele)
 	{
 		ele.click();
 	}
 	
+	// Enter or Pass the required text in the WebElement
 	public void enterText(WebElement ele, String text)
 	{
 		ele.sendKeys(text);
 	}
-	
+
+	//Bring focus on the WebElement 
 	public void focusOnElement(WebElement ele)
 	{
 		((RemoteWebDriver) driver).executeScript("arguments[0].scrollIntoView(true);", ele);
 
 	}
 	
+	//Get the text of the WebElement passed
 	public String showtext(WebElement ele) {
 		return ele.getText();
 	}
 	
+	//Return the integer representation of the Month ( Like March is 03)
 	public  int monthInNum(String monthS) {
 		// TODO Auto-generated method stub
 		switch(monthS)
@@ -170,6 +176,7 @@ public class CommonMethods {
 	      	}
 	}
 	
+	//Wait for the Element to be available until the number of seconds provided as input are passed
 	public void waitTillElementVisible(WebElement webEle, int seconds)
 	{
 		 WebDriverWait wait = new WebDriverWait(driver,seconds);

@@ -21,6 +21,7 @@ public class BaseTest {
 	public static ExtentTest test;
 	private Properties prop;
 	
+	//Initialize the driver for the browser (Chrome, Firefox, Edge) specified
 	public WebDriver initializeDriver(String browserName, String driverPath) throws IOException {
 		
 		switch (browserName)
@@ -56,6 +57,7 @@ public class BaseTest {
 
 	}
 	
+	//Close the Browser after the tests
 	public void closeAll()
 	{
 		driver.close();
@@ -64,17 +66,22 @@ public class BaseTest {
 		
 	}
 	
+	
+	//Launch the URL provided in the Browser
 	public void launchPage(String URL, String title)
 	{
 		driver.get(URL);
 		Assert.assertTrue(driver.getTitle().equals(title));
 	}
 	
+	
+	//Return the state of the driver
 	public WebDriver getDriver() {
 	        return driver;
 	    }
 	
 	
+	//Get the input details (Browser to run from, URL, Other input details) from the properties file
 	public Properties getInputDetails(String filePath) throws IOException
 	{
 		prop = new Properties();

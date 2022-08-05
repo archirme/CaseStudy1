@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-RegressionSuite" class="navigator-link">
-              <span class="suite-name border-failed">RegressionSuite</span>
+              <span class="suite-name border-passed">RegressionSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-RegressionSuite" class="hide-methods failed suite-RegressionSuite"> (hide)</a> <!-- hide-methods failed suite-RegressionSuite -->
-                      <a href="#" panel-name="suite-RegressionSuite" class="show-methods failed suite-RegressionSuite"> (show)</a> <!-- show-methods failed suite-RegressionSuite -->
-                    </span>
-                    <div class="method-list-content failed suite-RegressionSuite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-RegressionSuite" title="tests.FrameWindowTest" class="method navigator-link" hash-for-method="frameTest">frameTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-RegressionSuite -->
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -121,17 +107,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-RegressionSuite" title="tests.AlertWindowTest" class="method navigator-link" hash-for-method="alertWithOk">alertWithOk</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-RegressionSuite" title="tests.FrameWindowTest" class="method navigator-link" hash-for-method="frameTest">frameTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-RegressionSuite" title="tests.AlertWindowTest" class="method navigator-link" hash-for-method="alertWithOkNCancel">alertWithOkNCancel</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-RegressionSuite" title="tests.AlertWindowTest" class="method navigator-link" hash-for-method="alertWithTextBox">alertWithTextBox</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-RegressionSuite" title="tests.WindowsSwitchTest" class="method navigator-link" hash-for-method="navigateTest">navigateTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -151,9 +132,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-RegressionSuite" class="panel RegressionSuite">
-          <div class="suite-RegressionSuite-class-failed">
+          <div class="suite-RegressionSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">tests.FrameWindowTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -162,47 +143,21 @@
                   <a name="frameTest">
                   </a> <!-- frameTest -->
                   <span class="method-name">frameTest</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#dismiss-button&quot;}
-  (Session info: chrome=103.0.5060.134)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
-System info: host: &apos;DESKTOP-D5OBL1K&apos;, ip: &apos;192.168.1.162&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}), userDataDir=C:\Users\anilc\AppData\Local\Temp\scoped_dir3540_1782413506}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:54453}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=103.0.5060.134, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: fc00f6962c1990a1b94b6aa0144c69ff
-*** Element info: {Using=css selector, value=#dismiss-button}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:510)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
-	at pageObjects.FramePage.frameTestOption1(FramePage.java:37)
-	at tests.FrameWindowTest.frameTest(FrameWindowTest.java:57)
-... Removed 30 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-RegressionSuite-class-failed -->
+          </div> <!-- suite-RegressionSuite-class-passed -->
           <div class="suite-RegressionSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.UserRegistrationTest</span>
+              <span class="class-name">tests.WindowsSwitchTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="UserRegistration">
-                  </a> <!-- UserRegistration -->
-                  <span class="method-name">UserRegistration</span>
+                  <a name="navigateTest">
+                  </a> <!-- navigateTest -->
+                  <span class="method-name">navigateTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -225,28 +180,14 @@ Session ID: fc00f6962c1990a1b94b6aa0144c69ff
           <div class="suite-RegressionSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.AlertWindowTest</span>
+              <span class="class-name">tests.UserRegistrationTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="alertWithOk">
-                  </a> <!-- alertWithOk -->
-                  <span class="method-name">alertWithOk</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="alertWithOkNCancel">
-                  </a> <!-- alertWithOkNCancel -->
-                  <span class="method-name">alertWithOkNCancel</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="alertWithTextBox">
-                  </a> <!-- alertWithTextBox -->
-                  <span class="method-name">alertWithTextBox</span>
+                  <a name="UserRegistration">
+                  </a> <!-- UserRegistration -->
+                  <span class="method-name">UserRegistration</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -263,10 +204,11 @@ Session ID: fc00f6962c1990a1b94b6aa0144c69ff
 &lt;suite thread-count=&quot;-1&quot; name=&quot;RegressionSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test name=&quot;RegressionTests&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.AlertWindowTest&quot;/&gt;
-      &lt;class name=&quot;tests.DatePickerTest&quot;/&gt;
-      &lt;class name=&quot;tests.FrameWindowTest&quot;/&gt;
       &lt;class name=&quot;tests.UserRegistrationTest&quot;/&gt;
+      &lt;class name=&quot;tests.DatePickerTest&quot;/&gt;
+      &lt;class name=&quot;tests.AlertWindowTest&quot;/&gt;
+      &lt;class name=&quot;tests.FrameWindowTest&quot;/&gt;
+      &lt;class name=&quot;tests.WindowsSwitchTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- RegressionTests --&gt;
 &lt;/suite&gt; &lt;!-- RegressionSuite --&gt;
@@ -280,7 +222,7 @@ Session ID: fc00f6962c1990a1b94b6aa0144c69ff
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">RegressionTests (4 classes)</span>
+                <span class="test-name">RegressionTests (5 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -314,36 +256,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'UserRegistration')
 data.setCell(0, 2, 'tests.UserRegistrationTest')
-data.setCell(0, 3, 17460);
+data.setCell(0, 3, 17670);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'alertWithTextBox')
-data.setCell(1, 2, 'tests.AlertWindowTest')
-data.setCell(1, 3, 10209);
+data.setCell(1, 1, 'navigateTest')
+data.setCell(1, 2, 'tests.WindowsSwitchTest')
+data.setCell(1, 3, 14298);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'alertWithOkNCancel')
-data.setCell(2, 2, 'tests.AlertWindowTest')
-data.setCell(2, 3, 6164);
+data.setCell(2, 1, 'pickDatefromCalender')
+data.setCell(2, 2, 'tests.DatePickerTest')
+data.setCell(2, 3, 3958);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'frameTest')
 data.setCell(3, 2, 'tests.FrameWindowTest')
-data.setCell(3, 3, 5243);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'alertWithOk')
-data.setCell(4, 2, 'tests.AlertWindowTest')
-data.setCell(4, 3, 4106);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'pickDatefromCalender')
-data.setCell(5, 2, 'tests.DatePickerTest')
-data.setCell(5, 3, 3307);
+data.setCell(3, 3, 2519);
 window.suiteTableData['RegressionSuite']= { tableData: data, tableDiv: 'times-div-RegressionSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 46 seconds</span>
+              <span class="suite-total-time">Total running time: 38 seconds</span>
               <div id="times-div-RegressionSuite">
               </div> <!-- times-div-RegressionSuite -->
             </div> <!-- times-div -->
@@ -379,134 +313,121 @@ return data;
               <div class="chronological-class-name">tests.DatePickerTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">startsuite</span>
-                <span class="method-start">168 ms</span>
+                <span class="method-start">157 ms</span>
               </div> <!-- configuration-suite before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.FrameWindowTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">startsuite</span>
-                <span class="method-start">170 ms</span>
+                <span class="method-start">160 ms</span>
               </div> <!-- configuration-suite before -->
-              <div class="configuration-class before">
-                <span class="method-name">starclass</span>
-                <span class="method-start">185 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">191 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">frameTest</span>
-                <span class="method-start">4447 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">cleanup</span>
-                <span class="method-start">9694 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">afterclass</span>
-                <span class="method-start">10011 ms</span>
-              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.WindowsSwitchTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">startsuite</span>
+                <span class="method-start">163 ms</span>
+              </div> <!-- configuration-suite before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.UserRegistrationTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">UserRegistration</span>
-                <span class="method-start">10012 ms</span>
+                <span class="method-start">191 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.AlertWindowTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.FrameWindowTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">starclass</span>
-                <span class="method-start">27473 ms</span>
+                <span class="method-start">17864 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">27473 ms</span>
+                <span class="method-start">17864 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">alertWithOk</span>
-                <span class="method-start">30273 ms</span>
+                <span class="method-name">frameTest</span>
+                <span class="method-start">21268 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">cleanup</span>
-                <span class="method-start">34380 ms</span>
+                <span class="method-start">23788 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterclass</span>
+                <span class="method-start">24079 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.WindowsSwitchTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">starclass</span>
+                <span class="method-start">24080 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">24081 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">navigateTest</span>
+                <span class="method-start">24857 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanup</span>
+                <span class="method-start">39155 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.DatePickerTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">starclass</span>
-                <span class="method-start">34691 ms</span>
+                <span class="method-start">39411 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">34692 ms</span>
+                <span class="method-start">39411 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">pickDatefromCalender</span>
-                <span class="method-start">38180 ms</span>
+                <span class="method-start">42606 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">cleanup</span>
-                <span class="method-start">41488 ms</span>
+                <span class="method-start">46564 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterclass</span>
-                <span class="method-start">41755 ms</span>
+                <span class="method-start">46872 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.AlertWindowTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">41755 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">alertWithOkNCancel</span>
-                <span class="method-start">44807 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">cleanup</span>
-                <span class="method-start">50972 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">55174 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">alertWithTextBox</span>
-                <span class="method-start">58355 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">cleanup</span>
-                <span class="method-start">68566 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">afterclass</span>
-                <span class="method-start">68897 ms</span>
-              </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">endsuite</span>
-                <span class="method-start">68923 ms</span>
+                <span class="method-start">46892 ms</span>
               </div> <!-- configuration-suite after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.DatePickerTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">endsuite</span>
-                <span class="method-start">69117 ms</span>
+                <span class="method-start">47095 ms</span>
               </div> <!-- configuration-suite after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.FrameWindowTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">endsuite</span>
-                <span class="method-start">69149 ms</span>
+                <span class="method-start">47129 ms</span>
+              </div> <!-- configuration-suite after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.WindowsSwitchTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">endsuite</span>
+                <span class="method-start">47158 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
