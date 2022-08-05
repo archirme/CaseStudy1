@@ -36,7 +36,7 @@ public class DatePickerTest extends BaseTest
 	@BeforeClass
 	public void starclass()
 	{
-		test=report.startTest("Date Picker Test Started");
+//		test=report.startTest("Date Picker Test Started");
 	}
 	
 	@BeforeMethod

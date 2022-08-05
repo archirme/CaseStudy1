@@ -37,7 +37,7 @@ public class AlertWindowTest extends BaseTest
 	@BeforeClass
 	public void starclass()
 	{
-//		test=report.startTest("Flight Booking Tests");
+//		test=report.startTest(" Tests");
 	}
 	
 	@BeforeMethod

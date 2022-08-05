@@ -52,7 +52,7 @@ public class FrameWindowTest extends BaseTest
 	}
 	
 	@Test
-	public void frameTest() 
+	public void frameTest() throws InterruptedException 
 	{
 		frameO.frameTestOption1();
 	}

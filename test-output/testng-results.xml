@@ -1,116 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-05T10:10:10Z" name="RegressionSuite" finished-at="2022-08-05T10:10:56Z" duration-ms="46706">
+  <suite started-at="2022-08-05T12:24:53Z" name="Default suite" finished-at="2022-08-05T12:25:08Z" duration-ms="15108">
     <groups>
-      <group name="Regression">
-        <method signature="UserRegistrationTest.UserRegistration()[pri:0, instance:tests.UserRegistrationTest@4c5ae43b]" name="UserRegistration" class="tests.UserRegistrationTest"/>
-      </group> <!-- Regression -->
     </groups>
-    <test started-at="2022-08-05T10:10:10Z" name="RegressionTests" finished-at="2022-08-05T10:10:56Z" duration-ms="46706">
-      <class name="tests.WindowsSwitchTest">
-        <test-method is-config="true" signature="starclass()[pri:0, instance:tests.WindowsSwitchTest@33f676f6]" started-at="2022-08-05T15:40:34Z" name="starclass" finished-at="2022-08-05T15:40:34Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- starclass -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.WindowsSwitchTest@33f676f6]" started-at="2022-08-05T15:40:34Z" name="setup" finished-at="2022-08-05T15:40:34Z" duration-ms="776" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="navigateTest()[pri:0, instance:tests.WindowsSwitchTest@33f676f6]" started-at="2022-08-05T15:40:34Z" name="navigateTest" finished-at="2022-08-05T15:40:49Z" duration-ms="14298" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateTest -->
-        <test-method is-config="true" signature="cleanup()[pri:0, instance:tests.WindowsSwitchTest@33f676f6]" started-at="2022-08-05T15:40:49Z" name="cleanup" finished-at="2022-08-05T15:40:49Z" duration-ms="255" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanup -->
-      </class> <!-- tests.WindowsSwitchTest -->
-      <class name="tests.UserRegistrationTest">
-        <test-method signature="UserRegistration()[pri:0, instance:tests.UserRegistrationTest@4c5ae43b]" started-at="2022-08-05T15:40:10Z" name="UserRegistration" finished-at="2022-08-05T15:40:27Z" duration-ms="17670" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UserRegistration -->
-      </class> <!-- tests.UserRegistrationTest -->
+    <test started-at="2022-08-05T12:24:53Z" name="Default test" finished-at="2022-08-05T12:25:08Z" duration-ms="15108">
       <class name="tests.FrameWindowTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.FrameWindowTest@1cf56a1c]" started-at="2022-08-05T15:40:27Z" name="setup" finished-at="2022-08-05T15:40:31Z" duration-ms="3404" status="PASS">
+        <test-method is-config="true" signature="startsuite()[pri:0, instance:tests.FrameWindowTest@7d61eb55]" started-at="2022-08-05T17:54:52Z" name="startsuite" finished-at="2022-08-05T17:54:53Z" duration-ms="157" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="starclass()[pri:0, instance:tests.FrameWindowTest@1cf56a1c]" started-at="2022-08-05T15:40:27Z" name="starclass" finished-at="2022-08-05T15:40:27Z" duration-ms="0" status="PASS">
+        </test-method> <!-- startsuite -->
+        <test-method is-config="true" signature="starclass()[pri:0, instance:tests.FrameWindowTest@7d61eb55]" started-at="2022-08-05T17:54:53Z" name="starclass" finished-at="2022-08-05T17:54:53Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- starclass -->
-        <test-method signature="frameTest()[pri:0, instance:tests.FrameWindowTest@1cf56a1c]" started-at="2022-08-05T15:40:31Z" name="frameTest" finished-at="2022-08-05T15:40:33Z" duration-ms="2519" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.FrameWindowTest@7d61eb55]" started-at="2022-08-05T17:54:53Z" name="setup" finished-at="2022-08-05T17:54:57Z" duration-ms="4519" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="frameTest()[pri:0, instance:tests.FrameWindowTest@7d61eb55]" started-at="2022-08-05T17:54:57Z" name="frameTest" finished-at="2022-08-05T17:55:07Z" duration-ms="10326" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='ad_position_box']//div[@id='dismiss-button']"}  (Session info: chrome=103.0.5060.134)For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.htmlBuild info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'System info: host: 'DESKTOP-D5OBL1K', ip: '192.168.1.162', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}), userDataDir=C:\Users\anilc\AppData\Local\Temp\scoped_dir14032_211204060}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:56480}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=103.0.5060.134, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]Session ID: 36421460e80a8b4116aa35e0d18687c0*** Element info: {Using=xpath, value=//div[@id='ad_position_box']//div[@id='dismiss-button']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='ad_position_box']//div[@id='dismiss-button']"}  (Session info: chrome=103.0.5060.134)For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.htmlBuild info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'System info: host: 'DESKTOP-D5OBL1K', ip: '192.168.1.162', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}), userDataDir=C:\Users\anilc\AppData\Local\Temp\scoped_dir14032_211204060}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:56480}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=103.0.5060.134, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]Session ID: 36421460e80a8b4116aa35e0d18687c0*** Element info: {Using=xpath, value=//div[@id='ad_position_box']//div[@id='dismiss-button']}at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)at org.openqa.selenium.By$ByXPath.findElement(By.java:361)at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)at pageObjects.FramePage.frameTestOption1(FramePage.java:64)at tests.FrameWindowTest.frameTest(FrameWindowTest.java:57)at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.base/java.lang.reflect.Method.invoke(Method.java:568)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- frameTest -->
-        <test-method is-config="true" signature="cleanup()[pri:0, instance:tests.FrameWindowTest@1cf56a1c]" started-at="2022-08-05T15:40:33Z" name="cleanup" finished-at="2022-08-05T15:40:34Z" duration-ms="291" status="PASS">
+        <test-method is-config="true" signature="cleanup()[pri:0, instance:tests.FrameWindowTest@7d61eb55]" started-at="2022-08-05T17:55:07Z" name="cleanup" finished-at="2022-08-05T17:55:08Z" duration-ms="236" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanup -->
-        <test-method is-config="true" signature="afterclass()[pri:0, instance:tests.FrameWindowTest@1cf56a1c]" started-at="2022-08-05T15:40:34Z" name="afterclass" finished-at="2022-08-05T15:40:34Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterclass()[pri:0, instance:tests.FrameWindowTest@7d61eb55]" started-at="2022-08-05T17:55:08Z" name="afterclass" finished-at="2022-08-05T17:55:08Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterclass -->
+        <test-method is-config="true" signature="endsuite()[pri:0, instance:tests.FrameWindowTest@7d61eb55]" started-at="2022-08-05T17:55:08Z" name="endsuite" finished-at="2022-08-05T17:55:08Z" duration-ms="217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endsuite -->
       </class> <!-- tests.FrameWindowTest -->
-      <class name="tests.AlertWindowTest">
-        <test-method is-config="true" signature="startsuite()[pri:0, instance:tests.AlertWindowTest@3cce57c7]" started-at="2022-08-05T15:40:09Z" name="startsuite" finished-at="2022-08-05T15:40:10Z" duration-ms="157" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startsuite -->
-        <test-method is-config="true" signature="startsuite()[pri:0, instance:tests.DatePickerTest@18ece7f4]" started-at="2022-08-05T15:40:10Z" name="startsuite" finished-at="2022-08-05T15:40:10Z" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startsuite -->
-        <test-method is-config="true" signature="startsuite()[pri:0, instance:tests.FrameWindowTest@1cf56a1c]" started-at="2022-08-05T15:40:10Z" name="startsuite" finished-at="2022-08-05T15:40:10Z" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startsuite -->
-        <test-method is-config="true" signature="startsuite()[pri:0, instance:tests.WindowsSwitchTest@33f676f6]" started-at="2022-08-05T15:40:10Z" name="startsuite" finished-at="2022-08-05T15:40:10Z" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startsuite -->
-        <test-method is-config="true" signature="endsuite()[pri:0, instance:tests.AlertWindowTest@3cce57c7]" started-at="2022-08-05T15:40:56Z" name="endsuite" finished-at="2022-08-05T15:40:57Z" duration-ms="203" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endsuite -->
-        <test-method is-config="true" signature="endsuite()[pri:0, instance:tests.DatePickerTest@18ece7f4]" started-at="2022-08-05T15:40:57Z" name="endsuite" finished-at="2022-08-05T15:40:57Z" duration-ms="34" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endsuite -->
-        <test-method is-config="true" signature="endsuite()[pri:0, instance:tests.FrameWindowTest@1cf56a1c]" started-at="2022-08-05T15:40:57Z" name="endsuite" finished-at="2022-08-05T15:40:57Z" duration-ms="29" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endsuite -->
-        <test-method is-config="true" signature="endsuite()[pri:0, instance:tests.WindowsSwitchTest@33f676f6]" started-at="2022-08-05T15:40:57Z" name="endsuite" finished-at="2022-08-05T15:40:57Z" duration-ms="30" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endsuite -->
-      </class> <!-- tests.AlertWindowTest -->
-      <class name="tests.DatePickerTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.DatePickerTest@18ece7f4]" started-at="2022-08-05T15:40:49Z" name="setup" finished-at="2022-08-05T15:40:52Z" duration-ms="3194" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="starclass()[pri:0, instance:tests.DatePickerTest@18ece7f4]" started-at="2022-08-05T15:40:49Z" name="starclass" finished-at="2022-08-05T15:40:49Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- starclass -->
-        <test-method signature="pickDatefromCalender()[pri:1, instance:tests.DatePickerTest@18ece7f4]" started-at="2022-08-05T15:40:52Z" name="pickDatefromCalender" finished-at="2022-08-05T15:40:56Z" duration-ms="3958" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pickDatefromCalender -->
-        <test-method is-config="true" signature="cleanup()[pri:0, instance:tests.DatePickerTest@18ece7f4]" started-at="2022-08-05T15:40:56Z" name="cleanup" finished-at="2022-08-05T15:40:56Z" duration-ms="308" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanup -->
-        <test-method is-config="true" signature="afterclass()[pri:0, instance:tests.DatePickerTest@18ece7f4]" started-at="2022-08-05T15:40:56Z" name="afterclass" finished-at="2022-08-05T15:40:56Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterclass -->
-      </class> <!-- tests.DatePickerTest -->
-    </test> <!-- RegressionTests -->
-  </suite> <!-- RegressionSuite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
