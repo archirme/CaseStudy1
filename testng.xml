@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RegressionSuite">
+	<!-- <groups> <run> <include name="Sanity"/> </run> </groups> -->
+	<test name="RegressionTests" verbose="0">
+		<classes>
+			<!-- <class name="sdet.training.AlertTest"/> <class name="sdet.training.DatePicker"/> -->
+			<class name="tests.AlertWindowTest" />
+			<class name="tests.DatePickerTest" />
+			<class name="tests.FrameWindowTest" />
+			<class name="tests.UserRegistrationTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
