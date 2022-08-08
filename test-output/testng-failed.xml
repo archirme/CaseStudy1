@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="-1" name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test name="Default test(failed)">
+<suite thread-count="-1" name="Failed suite [RegressionSuite]" guice-stage="DEVELOPMENT">
+  <test name="RegressionTests(failed)">
     <classes>
-      <class name="tests.FrameWindowTest">
+      <class name="tests.DatePickerTest">
         <methods>
-          <include name="afterclass"/>
-          <include name="cleanup"/>
-          <include name="startsuite"/>
-          <include name="endsuite"/>
           <include name="setup"/>
+          <include name="endsuite"/>
+          <include name="cleanup"/>
           <include name="starclass"/>
-          <include name="frameTest"/>
+          <include name="startsuite"/>
+          <include name="afterclass"/>
+          <include name="pickDatefromCalender"/>
         </methods>
-      </class> <!-- tests.FrameWindowTest -->
+      </class> <!-- tests.DatePickerTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- RegressionTests(failed) -->
+</suite> <!-- Failed suite [RegressionSuite] -->

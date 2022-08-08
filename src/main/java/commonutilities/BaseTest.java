@@ -60,7 +60,7 @@ public class BaseTest {
 	//Close the Browser after the tests
 	public void closeAll()
 	{
-		driver.close();
+//		driver.close();
 		driver.quit();
 		System.out.println("End of the Test");
 		
